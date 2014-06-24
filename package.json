@@ -1,0 +1,29 @@
+{
+  "name": "node-heat-client",
+  "version": "0.0.0",
+  "description": "OpenStack heat client in Nodejs",
+  "main": "lib/stack.js",
+  "scripts": {
+    "start": "node lib/stack.js",
+    "test" : "icake compile;mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chenhaiq/nodejs-heat-client.git"
+  },
+  "author": "chenhaiq@cn.ibm.com",
+  "license": "None",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "pkgcloud": "0.8.14",
+    "request" : "2.34.0",
+    "iced-coffee-script": "~1.4.0-c",
+    "glob": "~3.1.21",
+    "async": "~0.2.6",
+    "express": "~3.1.0"
+  },
+  "devDependencies": {
+    "express": "4.4.4 ",
+    "expect.js": "~0.2.0"
+  }
+}
