@@ -1,9 +1,10 @@
 {
   "name": "node-heat-client",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "OpenStack heat client in Nodejs",
   "main": "lib/stack.js",
   "scripts": {
+    "prepublish": "iced --compile --output lib/ src/",
     "start": "node lib/stack.js",
     "test" : "icake compile;mocha"
   },
@@ -16,14 +17,14 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "pkgcloud": "0.8.14",
-    "request" : "2.34.0",
-    "glob": "~3.1.21",
-    "async": "~0.2.6",
-    "express": "~3.1.0"
+    "request" : "2.34.0"
   },
   "devDependencies": {
     "iced-coffee-script": "~1.4.0-c",
     "express": "4.4.4 ",
-    "expect.js": "~0.2.0"
+    "glob": "~3.1.21",
+    "async": "~0.2.6",
+    "expect.js": "~0.2.0",
+    "express": "~3.1.0"
   }
 }
