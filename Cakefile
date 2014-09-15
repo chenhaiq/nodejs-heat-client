@@ -29,14 +29,20 @@ clean = (callback) ->
         callback()
 
 compile = (callback) ->
-    console.log "Compiling ICS -> JS..."
-    await node "./node_modules/.bin/iced --compile lib/ test/", defer error
+    console.log "Compiling src -> lib/*.js"
+    await node "./node_modules/.bin/iced --compile --output lib/ src/", defer error
     if error?
-        console.log "Failed to compile the code."
+        console.log "Failed to compile the src code."
         return callback error
     else
-        console.log "Successfully compiled the code."
-        return callback()
+        console.log "Compiling test -> test/*.js"
+        await node "./node_modules/.bin/iced --compile test/", defer error
+        if error?
+            console.log "Failed to compile the test code."
+            return callback error
+        else
+            console.log "Successfully compiled the code."
+            return callback()
 
 complete = (error) -> throw error if error?
 

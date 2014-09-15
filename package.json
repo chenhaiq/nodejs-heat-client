@@ -17,12 +17,12 @@
   "dependencies": {
     "pkgcloud": "0.8.14",
     "request" : "2.34.0",
-    "iced-coffee-script": "~1.4.0-c",
     "glob": "~3.1.21",
     "async": "~0.2.6",
     "express": "~3.1.0"
   },
   "devDependencies": {
+    "iced-coffee-script": "~1.4.0-c",
     "express": "4.4.4 ",
     "expect.js": "~0.2.0"
   }
