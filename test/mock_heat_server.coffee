@@ -346,6 +346,9 @@ run = ->
     server.get '/v1/:tenant_id/stacks/:stack_name([a-z]+)', findsUrlStack
     server.get '/v1/:tenant_id/stacks/:stack_id([0-9]+)', findsUrlStack
     server.delete '/v1/:tenant_id/stacks/:stack_name/:stack_id', deletesStack
+    server.get '/v1/:tenant_id/stacks', listsStack
+    server.put '/v1/:tenant_id/stacks/:stack_name/:stack_id', updatesStack
+    server.get '/v1/:tenant_id/stacks/:stack_name/:stack_id', getsDataStack
     server.listen port, ip
     console.log "--Mock Heat server listening on IP #{ip} port #{port}--"
 
