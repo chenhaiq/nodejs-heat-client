@@ -5,19 +5,11 @@ class Stack
     constructor: (@options) ->
 
     _getHeader: ->
-        if not @debug
-            header =
-                'Accept': 'application/json'
-                'Content-Type': 'application/json'
-                'X-Auth-User': @options.username
-                'X-Auth-Key': @options.password
-                'X-Auth-Token': @token
-        else
-            header =
-                'Accept': 'application/json'
-                'X-Auth-User': @options.username
-                'X-Auth-Key': @options.password
-                'X-Auth-Token': @token
+        'Accept': 'application/json'
+        'Content-Type': 'application/json'
+        'X-Auth-User': @options.username
+        'X-Auth-Key': @options.password
+        'X-Auth-Token': @token
 
     init:(callback) ->
         return callback() if @debug

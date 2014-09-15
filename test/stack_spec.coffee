@@ -14,7 +14,10 @@ describe "Stack class", ->
         os_options = null
  
         beforeEach (done) ->
-            os_options = {}
+            os_options = 
+                username: "admin"
+                password: "anypw"
+                tenantName: "default"
             done()
             
         afterEach (done) ->
