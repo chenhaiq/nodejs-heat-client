@@ -1,6 +1,6 @@
 {
   "name": "node-heat-client",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "OpenStack heat client in Nodejs",
   "main": "lib/stack.js",
   "scripts": {
