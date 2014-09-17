@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git@github.com:chenhaiq/nodejs-heat-client.git"
   },
-  "author": "chenhaiq@cn.ibm.com",
+  "author": "chocean@gmail.com",
   "license": "None",
   "readmeFilename": "README.md",
   "dependencies": {
